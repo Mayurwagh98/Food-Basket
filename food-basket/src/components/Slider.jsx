@@ -33,56 +33,47 @@
 
 import React from "react";
 import { useSnapCarousel } from "react-snap-carousel";
-import { Card } from "antd";
+import "./Slider.css";
 
 const AdvancedCarousel = () => {
   const { scrollRef, next, prev } = useSnapCarousel();
   let Item = [
-    "https://cdn.shopify.com/s/files/1/0192/0076/files/PDP-SIGNATURE_OMD-_HOVER.jpg?v=1666958067",
-    "https://media.istockphoto.com/id/1371124527/photo/healthy-eating-and-blood-pressure-control.jpg?b=1&s=170667a&w=0&k=20&c=aEzSBMEbIaHfpcT6WPsWK9wU742rSRgo4i6JWssq52Y=",
-    "https://media.istockphoto.com/id/1371124527/photo/healthy-eating-and-blood-pressure-control.jpg?b=1&s=170667a&w=0&k=20&c=aEzSBMEbIaHfpcT6WPsWK9wU742rSRgo4i6JWssq52Y=",
-    "https://media.istockphoto.com/id/1371124527/photo/healthy-eating-and-blood-pressure-control.jpg?b=1&s=170667a&w=0&k=20&c=aEzSBMEbIaHfpcT6WPsWK9wU742rSRgo4i6JWssq52Y=",
-    "https://media.istockphoto.com/id/1371124527/photo/healthy-eating-and-blood-pressure-control.jpg?b=1&s=170667a&w=0&k=20&c=aEzSBMEbIaHfpcT6WPsWK9wU742rSRgo4i6JWssq52Y=",
-    "https://media.istockphoto.com/id/1371124527/photo/healthy-eating-and-blood-pressure-control.jpg?b=1&s=170667a&w=0&k=20&c=aEzSBMEbIaHfpcT6WPsWK9wU742rSRgo4i6JWssq52Y=",
-    "https://media.istockphoto.com/id/1371124527/photo/healthy-eating-and-blood-pressure-control.jpg?b=1&s=170667a&w=0&k=20&c=aEzSBMEbIaHfpcT6WPsWK9wU742rSRgo4i6JWssq52Y=",
+    {
+      url: "https://cdn.shopify.com/s/files/1/0192/0076/files/PDP-SIGNATURE_OMD-_HOVER.jpg?v=1666958067",
+      p: "Signature Nutrition",
+    },
+    {
+      url: "https://bigtreefarms.com/wp-content/uploads/2021/08/Butterfinger-Bites2-372x406.jpg",
+      p: "Butterfinger Bites",
+    },
+    {
+      url: "https://bigtreefarms.com/wp-content/uploads/2021/08/Vegan-Cheesy-Crunch-Tacos1-372x406.jpg",
+      p: "Passionfruit Vanilla Pancakes",
+    },
+    {
+      url: "https://bigtreefarms.com/wp-content/uploads/2021/08/Raw-Lasagna-Roll-Ups2-372x406.jpg",
+      p: "Vegan Cheesy Crunch Tacos",
+    },
+    {
+      url: "https://bigtreefarms.com/wp-content/uploads/2021/08/Chimichurri-Summer-Ramen3-372x406.jpg",
+      p: "Raw Lasagna Roll-Ups",
+    },
   ];
   return (
     <>
-      <ul
-        ref={scrollRef}
-        style={{
-          display: "flex",
-          overflow: "auto",
-          scrollSnapType: "x mandatory",
-          width:"60%",
-          margin:"auto"
-        }}
-      >
+      <ul className="sliderUl" ref={scrollRef}>
         {Item.map((item, i) => (
-          <li
-            style={{
-              backgroundColor: "aqua",
-              fontSize: "50px",
-              width: "200px",
-              height: "350px",
-              flexShrink: 0,
-              color: "#fff",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              margin:"10px"
-            }}
-          >
-            <div style={{border:"2px solid red", width:"100%", height:"100%"}}>
-              <img src={item} alt="" width={"100%"} margin="0px" height={"70%"} />
-              
+          <li className="sliderLi">
+            <div className="slider_div">
+              <img src={item.url} alt="" width={"100%"} height={"70%"} />
+              <h3 className="slider_heading">{item.p}</h3>
             </div>
           </li>
         ))}
       </ul>
 
-      <button onClick={() => prev()}>Prev</button>
-      <button onClick={() => next()}>Next</button>
+      {/* <button onClick={() => prev()}>Prev</button>
+      <button onClick={() => next()}>Next</button> */}
     </>
   );
 };
