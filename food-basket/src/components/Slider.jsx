@@ -40,23 +40,23 @@ const AdvancedCarousel = () => {
   let Item = [
     {
       url: "https://cdn.shopify.com/s/files/1/0192/0076/files/PDP-SIGNATURE_OMD-_HOVER.jpg?v=1666958067",
-      p: "Signature Nutrition",
+      text: "Signature Nutrition",
     },
     {
       url: "https://bigtreefarms.com/wp-content/uploads/2021/08/Butterfinger-Bites2-372x406.jpg",
-      p: "Butterfinger Bites",
+      text: "Butterfinger Bites",
     },
     {
       url: "https://bigtreefarms.com/wp-content/uploads/2021/08/Vegan-Cheesy-Crunch-Tacos1-372x406.jpg",
-      p: "Passionfruit Vanilla Pancakes",
+      text: "Passionfruit Vanilla Pancakes",
     },
     {
       url: "https://bigtreefarms.com/wp-content/uploads/2021/08/Raw-Lasagna-Roll-Ups2-372x406.jpg",
-      p: "Vegan Cheesy Crunch Tacos",
+      text: "Vegan Cheesy Crunch Tacos",
     },
     {
       url: "https://bigtreefarms.com/wp-content/uploads/2021/08/Chimichurri-Summer-Ramen3-372x406.jpg",
-      p: "Raw Lasagna Roll-Ups",
+      text: "Raw Lasagna Roll-Ups",
     },
   ];
   return (
@@ -66,7 +66,7 @@ const AdvancedCarousel = () => {
           <li className="sliderLi">
             <div className="slider_div">
               <img src={item.url} alt="" width={"100%"} height={"70%"} />
-              <h3 className="slider_heading">{item.p}</h3>
+              <h4 className="slider_heading">{item.text}</h4>
             </div>
           </li>
         ))}
