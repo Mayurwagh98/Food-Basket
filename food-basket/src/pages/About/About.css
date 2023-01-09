@@ -1,0 +1,25 @@
+.pillars_heading{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+.pillars_content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 20px;
+}
+.pillars_content >div{
+    border: 20px solid black;
+    text-align: center;
+    height: 300px;
+}
+.pillars_content h2{
+    margin-top: 40%;
+}
+.pillars_content > div > div{
+    border: 1px solid gray;
+    height: 80%;
+    width: 80%;
+    margin: 20px 0px 0 25px;
+}
