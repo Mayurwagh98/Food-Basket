@@ -1,12 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Roboto:wght@300&family=Yeon+Sung&display=swap');
+
 .rooted_div {
     height: 500px;
-    border: 1px solid red
+    /* border: 1px solid red */
 }
 
 .rooted_div img {
     height: 100%;
     width: 100%
 }
-.featured_products_heading{
+
+.featured_products_heading {
     text-align: center;
+}
+
+.philosophy_div {
+    /* border: 1px solid red; */
+    display: flex;
+    height: 250px;
+    margin: 70px 0 20px 0;
+    background-color: rgb(54, 138, 54);
+
+}
+
+.philosophy_div .philosophy_heading {
+    /* border: 1px solid blue; */
+    padding: 40px;
+    margin: 20px 0 0 0;
+    width: 50%;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Moon Dance';
+}
+
+.philosophy_content {
+    /* border: 1px solid blue; */
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Moon Dance';
+    margin: 0 0 0 20px;
+
+
 }
