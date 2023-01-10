@@ -12,5 +12,22 @@
       "title": "Sauces and Marinades",
       "description":"Soy-free, gluten-free, refined sugar-free, with less sodium than soy sauce and Whole30 Approved, these tasty better-for-you seasoning sauces and marinades elevate any dish!"
     }
+  ],
+  "organic_sweetners":[
+    {
+      "id":1,
+      "title":"ORGANIC COCONUT SUGAR",
+      "image":"https://cdn.shopify.com/s/files/1/0086/0556/5024/products/coconutsugarfrontcopy.jpg?v=1651749974"
+    },
+    {
+      "id":2,
+      "title":"ORGANIC GOLDEN COCONUT SUGAR",
+      "image":"https://rukminim1.flixcart.com/image/416/416/kdqa4y80/sugar/g/w/r/500-organic-coconut-sugar-500-gm-pouch-coconut-sugar-sugarous-original-imafukmsnyxfcsed.jpeg?q=70"
+    },
+    {
+      "id":3,
+      "title":"ORGANIC VANILLA COCONUT SUGAR",
+      "image":"https://bigtreefarms.com/wp-content/uploads/2021/01/BigTreeFarms092020_VanillaSugar_FRONT-998x1024.png"
+    }
   ]
 }
