@@ -1,0 +1,16 @@
+{
+  "allProducts": [
+    {
+      "id": 1,
+      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSydf890klc-Lxgngu9FyqfbZbEkDqBXmzNqK7R2OJUhxZr2-bR3PgvpymtVyl5RuV5e9Z9Q0N9JGiAb5R9ZnpJQr_xXfqHwnVjnTUDE7E&usqp=CAE",
+      "title": "Coconut Sweetners",
+      "description":"Unrefined, minimally processed, low glycemic and rich in essential minerals and amino acid, our Coconut Sugars offer incredibly delicious and better-for-you 1:1 replacements to cane sugar."
+    },
+    {
+      "id": 2,
+      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRPdTJ9rY5l7-bLp_HJYHNXe8TlJR-NN3zzFwdXJ_FS9ejC9HQqAZZncvXY3EniAKdjtWhxdyBSN5pTLNWfdL3w3EVgz5_ewVe6vCIxM4U&usqp=CAE",
+      "title": "Sauces and Marinades",
+      "description":"Soy-free, gluten-free, refined sugar-free, with less sodium than soy sauce and Whole30 Approved, these tasty better-for-you seasoning sauces and marinades elevate any dish!"
+    }
+  ]
+}
