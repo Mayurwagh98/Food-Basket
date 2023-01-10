@@ -46,10 +46,47 @@ const Organic_coconut_sweetners = () => {
                 <img src={item.image} alt="image" className="organic_image" />
                 <h1>{item.title}</h1>
 
-                <Button type="primary" className="details_btn">Details</Button>
+                <Button type="primary" className="details_btn">
+                  Details
+                </Button>
               </div>
             );
           })}
+        </div>
+        <div className="unrefined_div">
+          <h1>
+            Our coconut sugars are always Unrefined, Easy to Use & Ethically
+            Sourced...
+          </h1>
+          <div className="unrefined_img_div">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1567671823828-4272a32ef644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGljZWN1YmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                alt="ice cube"
+              />
+              <h3>Simple 1:1 replacement for cane sugar</h3>
+            </div>
+            <div>
+              <img
+                src="https://media.istockphoto.com/id/1342014107/photo/licking-lips-smiley-face.jpg?b=1&s=170667a&w=0&k=20&c=12NBIJktvvhihIExW2WCeal0cy7e58Jjdw4JLTBlilE="
+                alt="tasty emoji"
+              />
+              <h3>Better tasting than cane sugar</h3>
+            </div>
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1605810978644-1fa3b63ecd4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c3VnYXIlMjBjYW5lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="sugar cane"
+              />
+              <h3>More sustainable than cane sugar</h3>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h1>Make Something Delicious with Our Coconut Sugar</h1>
+          <div>
+            
+          </div>
         </div>
       </div>
     </>

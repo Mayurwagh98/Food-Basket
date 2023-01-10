@@ -3,12 +3,13 @@
 
 }
 
+
 .child_organic_div {
     padding: 100px 0 0 0;
     /* border: 1px solid blue; */
     box-sizing: border-box;
-    height: 450px;
     text-align: center;
+    height: 450px;
     background-color: #205295;
     color: white;
 }
@@ -16,6 +17,7 @@
 .child_organic_div h1 {
     font-size: 40px;
     font-family: MV Boli;
+
 }
 
 .child_organic_div p {
@@ -24,14 +26,13 @@
     margin: auto;
     font-size: 25px;
     font-family: Perpetua;
-
 }
 
 .organic_div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    margin: 40px ;
+    margin: 40px;
 }
 
 .organic_div div {
@@ -45,7 +46,9 @@
 .organic_div h1 {
     width: 70%;
     margin: auto auto 30px auto;
+
     font-family: Perpetua;
+
 }
 
 .organic_div img {
@@ -60,4 +63,44 @@
     width: 35%;
     height: 40px;
     font-size: 18px;
+}
+.unrefined_div {
+    /* border: 1px solid red; */
+    display: flex;
+    height: 400px;
+    background-color: #FFDCA9;
+}
+.unrefined_div h1{
+    width: 40%;
+    margin: auto auto auto 30px;
+    padding: 0 0 20px 0;
+    font-family: Goudy Old Style;
+    font-size: 35px;
+    color: #181D31;
+}
+.unrefined_img_div{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    /* border: 1px solid blue; */
+    text-align: center;
+}
+.unrefined_img_div h3{
+    font-family: Perpetua;
+    color: #282A3A;
+    width: 60%;
+    margin: auto;
+    font-size: 25px;
+}
+.unrefined_img_div  div{
+    /* border: 1px solid black; */
+    height: 80%;
+    margin: auto;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+.unrefined_img_div > div > img{
+    height: 200px;
+    margin: 20px ;
+    border-radius: 50%;
 }
