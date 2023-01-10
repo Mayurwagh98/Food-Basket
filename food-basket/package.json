@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
+    "server": "json-server --watch db.json --port 8080",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -14,8 +15,10 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.6.1",
+    "react-scroll-to-top": "^3.0.0",
     "react-simple-image-slider": "^2.4.1",
-    "react-snap-carousel": "^0.0.3"
+    "react-snap-carousel": "^0.0.3",
+    "react-webkit": "^0.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
