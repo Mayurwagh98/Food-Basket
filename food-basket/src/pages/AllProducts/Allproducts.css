@@ -51,3 +51,16 @@
     height: 40px;
     font-size: 19px;
 }
+.logos{
+    display:flex;
+    width: 80%;
+    margin: auto auto 20px auto;
+    justify-content: space-evenly;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.logos img{
+    width: 10%;
+    height: 90px;
+    margin: 20px;
+}
