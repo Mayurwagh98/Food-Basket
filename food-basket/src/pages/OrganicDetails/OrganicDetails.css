@@ -1,0 +1,12 @@
+.main_details_div{
+    border: 1px solid red;
+    
+}
+.child_details_div{
+    border: 1px solid blue;
+    padding: 50px 0 0 0;
+    display: flex;
+}
+.child_details_div img{
+    height: 300px;
+}
