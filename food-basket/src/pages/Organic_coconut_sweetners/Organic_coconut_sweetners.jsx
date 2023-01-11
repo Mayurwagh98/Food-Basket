@@ -70,7 +70,7 @@ const Organic_coconut_sweetners = () => {
         <div className="organic_div">
           {data.map((item, index) => {
             return (
-              <div key={index}>
+              <div key={index} className='child_div1'>
                 <img src={item.image} alt="image" className="organic_image" />
                 <h1>{item.title}</h1>
 

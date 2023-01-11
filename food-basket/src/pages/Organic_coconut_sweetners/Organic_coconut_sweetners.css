@@ -57,20 +57,21 @@
 .organic_div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin: 40px;
+    /* gap: 10px; */
+    margin: 20px 0 20px 0;
 }
 
 .organic_div div {
     text-align: center;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     margin: 30px;
+    border-radius: 20px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     background-color: #FFF6C3;
 }
 
 .organic_div h1 {
-    width: 70%;
+    width: 80%;
     margin: auto auto 30px auto;
 
     font-family: Perpetua;
@@ -79,7 +80,7 @@
 
 .organic_div img {
     width: 70%;
-    height: 350px;
+    height: 300px;
     margin: 40px 20px 20px 20px;
     border-radius: 30px;
 }
