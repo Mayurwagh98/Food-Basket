@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 import { Navbar } from "../../components/Navbar/Navbar";
 import "./OrganicDetails.css";
 import { Button } from "antd";
+import {Footer} from "../../components/Footer/Footer"
+import ScrollToTop from "react-scroll-to-top";
 
 const OrganicDetails = () => {
   let { id } = useParams();
@@ -23,12 +25,13 @@ const OrganicDetails = () => {
 
   useEffect(() => {
     getItem();
-    // window.scrollTo(0,0)
+    window.scrollTo(0,0)
   }, []);
 
   return (
     <div className="main_details_div">
       <Navbar />
+      <ScrollToTop smooth/>
       <div className="child_details_div">
         <div className="child_details_img">
           <img src={data.details_img} alt="item image" />
@@ -43,7 +46,7 @@ const OrganicDetails = () => {
         <div>
           <img src={data.image} alt="" />
         </div>
-        <div>
+        <div className="flavor_content">
           <h1>{data.flavor}</h1>
           <p>{data.flavor_desc}</p>
           <h1>{data.ingredients}</h1>
@@ -52,6 +55,7 @@ const OrganicDetails = () => {
           <p>{data.uses_desc}</p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

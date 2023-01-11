@@ -52,12 +52,14 @@
     height: 45px;
     margin: 20px;
     font-size: 17px;
+    
 }
 
 .flavor_details_div {
     display: flex;
     /* border: 1px solid red; */
-    margin-top: 40px;
+    margin: 40px;
+
 }
 
 .flavor_details_div div {
@@ -84,21 +86,25 @@
     font-family: Courier;
     font-size: 35px;
     line-height: 10px;
-    margin: 40px 0 0 0;
+    margin: 0px 0 10px 0;
     color: #850000;
+    line-height: 30px;
 }
 
 .flavor_details_div p {
     font-family: Comic Sans MS;
     font-size: 20px;
     color: #2B3467;
-
+    margin: 10px 0 20px 0;
+    line-height: 30px;
 }
 
 .flavor_details_div img {
-    width: 70%;
+    width: 65%;
     height: 350px;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
