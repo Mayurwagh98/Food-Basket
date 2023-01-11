@@ -4,10 +4,13 @@ import rooted from "../../images/rooted2.png";
 import "./Home.css";
 import { AdvancedCarousel } from "../../components/Slider";
 import { Footer } from "../../components/Footer/Footer";
+import ScrollToTop from "react-scroll-to-top";
+
 
 const Home = () => {
   return (
     <>
+      <ScrollToTop smooth/>
       <div style={{ height: "50px" }}>
         <Navbar />
       </div>
