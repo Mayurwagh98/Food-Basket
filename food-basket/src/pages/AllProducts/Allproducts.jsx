@@ -32,6 +32,7 @@ const Allproducts = () => {
   useEffect(() => {
     getProducts();
   }, []);
+  window.scrollTo(0, 0); // to scroll the page at the top whenever page loads
 
   let handleNavigate = () => {
     naviagate("/organic_coconut_sweetners");
@@ -47,7 +48,7 @@ const Allproducts = () => {
         <div className="product_div">
           {products.map((item, index) => {
             return (
-              <div key={item.id} className="child_product_div">
+              <div key={item.index} className="child_product_div">
                 <img src={item.image} alt="" />
                 <h1>{item.title}</h1>
                 <p>{item.description}</p>
