@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Navbar } from "../../components/Navbar/Navbar";
 import "./OrganicDetails.css";
+import { Button } from "antd";
 
 const OrganicDetails = () => {
   let { id } = useParams();
@@ -22,18 +23,33 @@ const OrganicDetails = () => {
 
   useEffect(() => {
     getItem();
+    // window.scrollTo(0,0)
   }, []);
 
   return (
     <div className="main_details_div">
       <Navbar />
       <div className="child_details_div">
+        <div className="child_details_img">
+          <img src={data.details_img} alt="item image" />
+          <div className="child_content">
+            <h1>{data.title}</h1>
+            <h3>{data.details}</h3>
+            <Button type="primary" className="buynow_btn">Buy Now</Button>
+          </div>
+        </div>
+      </div>
+      <div className="flavor_details_div">
         <div>
-          <h2>{data.title}</h2>
-          <h3>{data.details}</h3>
+          <img src={data.image} alt="" />
         </div>
         <div>
-          <img src={data.image} alt="item image" />
+          <h1>{data.flavor}</h1>
+          <p>{data.flavor_desc}</p>
+          <h1>{data.ingredients}</h1>
+          <p>{data.ingre_desc}</p>
+          <h1>{data.uses}</h1>
+          <p>{data.uses_desc}</p>
         </div>
       </div>
     </div>
