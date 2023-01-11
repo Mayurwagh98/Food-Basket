@@ -3,26 +3,50 @@ import React, { useEffect, useState } from "react";
 import { Navbar } from "../../components/Navbar/Navbar";
 import "./Organic_coconut_sweetners.css";
 import { Button } from "antd";
+import { Footer } from "../../components/Footer/Footer";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const Organic_coconut_sweetners = () => {
   let [data, setData] = useState([]);
-
+  let [makesomething, setMakeSomething] = useState([]);
+  let navigate = useNavigate()
   let getData = () => {
     axios
       .get("http://localhost:8080/organic_sweetners")
       .then((res) => {
-        data = res.data;
-        setData(data);
-        console.log(data);
+        // data = res.data;
+        setData(res.data);
+        // console.log(data);
       })
       .catch((e) => {
         console.log(e);
       });
   };
 
+  let getSomething = () =>{
+    axios
+    .get("http://localhost:8080/makeSomething")
+    .then((res) => {
+
+      console.log(res.data);
+      setMakeSomething(res.data);
+    })
+    .catch((e) => {
+      console.log(e);
+    });
+  }
+    
   useEffect(() => {
     getData();
+    getSomething()
   }, []);
+
+  let handleViewAll = () =>{
+    navigate("/recipes")
+  }
+  let handleDetails = () =>{
+    navigate("/organic_details")
+  }
 
   return (
     <>
@@ -46,7 +70,7 @@ const Organic_coconut_sweetners = () => {
                 <img src={item.image} alt="image" className="organic_image" />
                 <h1>{item.title}</h1>
 
-                <Button type="primary" className="details_btn">
+                <Button type="primary" className="details_btn" onClick={handleDetails}>
                   Details
                 </Button>
               </div>
@@ -82,12 +106,23 @@ const Organic_coconut_sweetners = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="something_declicious">
           <h1>Make Something Delicious with Our Coconut Sugar</h1>
-          <div>
-            
+          <div className="make_something">
+            {makesomething.map((item, index) => {
+              return (
+                <div key={index}>
+                  <img src={item.image} alt="image" />
+                  <h3>{item.title}</h3>
+                </div>
+              );
+            })}
           </div>
+          <Button type="primary" className="view_all" onClick={handleViewAll}>
+            View All
+          </Button>
         </div>
+        <Footer />
       </div>
     </>
   );
