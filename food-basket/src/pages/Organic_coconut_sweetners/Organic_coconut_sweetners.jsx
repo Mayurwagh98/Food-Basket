@@ -4,12 +4,14 @@ import { Navbar } from "../../components/Navbar/Navbar";
 import "./Organic_coconut_sweetners.css";
 import { Button } from "antd";
 import { Footer } from "../../components/Footer/Footer";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import ScrollToTop from "react-scroll-to-top";
+
 
 const Organic_coconut_sweetners = () => {
   let [data, setData] = useState([]);
   let [makesomething, setMakeSomething] = useState([]);
-  let navigate = useNavigate()
+  let navigate = useNavigate();
   let getData = () => {
     axios
       .get("http://localhost:8080/organic_sweetners")
@@ -23,34 +25,36 @@ const Organic_coconut_sweetners = () => {
       });
   };
 
-  let getSomething = () =>{
+  let getSomething = () => {
     axios
-    .get("http://localhost:8080/makeSomething")
-    .then((res) => {
+      .get("http://localhost:8080/makeSomething")
+      .then((res) => {
+        console.log(res.data);
+        setMakeSomething(res.data);
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  };
 
-      console.log(res.data);
-      setMakeSomething(res.data);
-    })
-    .catch((e) => {
-      console.log(e);
-    });
-  }
-    
   useEffect(() => {
     getData();
-    getSomething()
+    getSomething();
   }, []);
+  window.scrollTo(0, 0) // to scroll the page at the top whenever page loads
 
-  let handleViewAll = () =>{
-    navigate("/recipes")
-  }
-  let handleDetails = () =>{
-    navigate("/organic_details")
-  }
+  let handleViewAll = () => {
+    navigate("/recipes");
+  };
+  let handleDetails = (item) => {
+    navigate(`${item.id}/organic_details`);
+    // console.log(item)
+  };
 
   return (
     <>
       <Navbar />
+      <ScrollToTop smooth/>
       <div className="main_organic_div">
         <div className="child_organic_div">
           <h1>ORGANIC COCONUT SWEETENERS</h1>
@@ -70,7 +74,11 @@ const Organic_coconut_sweetners = () => {
                 <img src={item.image} alt="image" className="organic_image" />
                 <h1>{item.title}</h1>
 
-                <Button type="primary" className="details_btn" onClick={handleDetails}>
+                <Button
+                  type="primary"
+                  className="details_btn"
+                  onClick={() => handleDetails(item)}
+                >
                   Details
                 </Button>
               </div>
