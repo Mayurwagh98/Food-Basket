@@ -15,8 +15,8 @@ const MainRoute = () => {
         <Route path="/about" element={<About />} />
         <Route path="/allProducts" element={<Allproducts />} />
         <Route path="/organic_coconut_sweetners" element={<Organic_coconut_sweetners />} />
-        <Route path="/recipes" element={<ViewAll />} />
-        <Route path="/organic_details" element={<OrganicDetails />} />
+        <Route path="/viewAll" element={<ViewAll />} />
+        <Route path="/organic_coconut_sweetners/:id/organic_details" element={<OrganicDetails />} />
       </Routes>
     </div>
   );
