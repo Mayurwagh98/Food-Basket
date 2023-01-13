@@ -44,7 +44,7 @@ const Organic_coconut_sweetners = () => {
   window.scrollTo(0, 0) // to scroll the page at the top whenever page loads
 
   let handleViewAll = () => {
-    navigate("/recipes");
+    navigate("/viewAll");
   };
   let handleDetails = (item) => {
     navigate(`${item.id}/organic_details`);
