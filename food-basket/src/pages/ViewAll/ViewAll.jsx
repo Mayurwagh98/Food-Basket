@@ -4,6 +4,7 @@ import { Navbar } from "../../components/Navbar/Navbar";
 import explore_recipes from "../../images/explore_recipes.png";
 import "./ViewAll.css";
 import ReactPaginate from "react-paginate";
+import {Footer} from "../../components/Footer/Footer"
 
 const ViewAll = () => {
   let [recipes, setRecieps] = useState([]);
@@ -22,6 +23,7 @@ const ViewAll = () => {
 
   useEffect(() => {
     getRecipes();
+    window.scrollTo(0, 0)
   }, []);
 
   // ------------------- Pagination -------------------
@@ -66,6 +68,7 @@ const ViewAll = () => {
           disabledClassName={"pagination_link_disabled"}
           activeClassName={"pagination_link_active"}
         />
+        <Footer />
       </div>
     </>
   );
