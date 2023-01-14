@@ -39,11 +39,11 @@ const Sauces = () => {
   useEffect(() => {
     getData();
     getSomething();
+    window.scrollTo(0, 0); // to scroll the page at the top whenever page loads
   }, []);
-  window.scrollTo(0, 0); // to scroll the page at the top whenever page loads
 
-  let handleViewAll = () => {
-    navigate("/viewAll");
+  let allSauces = () => {
+    navigate("/ViewAll");
   };
   let handleDetails = (item) => {
     navigate(`${item.id}/sauces_details`);
@@ -130,7 +130,7 @@ const Sauces = () => {
               );
             })}
           </div>
-          <Button type="primary" className="view_all" onClick={handleViewAll}>
+          <Button type="primary" className="view_all" onClick={allSauces}>
             View All
           </Button>
         </div>
