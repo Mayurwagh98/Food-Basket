@@ -31,22 +31,22 @@ const Sauces_details = () => {
   return (
     <div className="main_details_div">
       <Navbar />
-      {/* <ScrollToTop smooth/> */}
+      <ScrollToTop smooth/>
       {/* <h1>{id}</h1> */}
-      <div className="child_details_div">
-        <div className="child_details_img">
+      <div className="sauce_child_details_div">
+        <div className="sauce_child_details_img">
           <img src={data.banner_img} alt="item image" />
-          <div className="child_content">
+          <div className="sauce_child_content">
             <h1>{data.title}</h1>
             <h3>{data.desc}</h3>
-            <Button type="primary" className="buynow_btn">
+            <Button type="primary" className="sauce_buynow_btn">
               Buy Now
             </Button>
           </div>
         </div>
       </div>
-      {/* <div className="flavor_details_div">
-        <div>
+      <div className="sauces_details_div">
+        <div >
           <img src={data.image} alt="" />
         </div>
         <div className="flavor_content">
@@ -57,7 +57,7 @@ const Sauces_details = () => {
           <h1>{data.uses}</h1>
           <p>{data.uses_desc}</p>
         </div>
-      </div> */}
+      </div>
       <Footer />
     </div>
   );
