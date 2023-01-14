@@ -10,12 +10,15 @@ import { Navigate, useNavigate } from "react-router-dom";
 const ViewAll = () => {
   let [recipes, setRecieps] = useState([]);
   const [currPage, setCurrPage] = useState(0);
-  let Navigate = useNavigate()
+  let [filterData, setFilterData] = useState(recipes);
+  let Navigate = useNavigate();
   let getRecipes = () => {
     axios
       .get("http://localhost:8080/recipes")
       .then((res) => {
         setRecieps(res.data);
+        filterData = res.data;
+        setFilterData(filterData);
       })
       .catch((e) => {
         console.log(e);
@@ -32,12 +35,36 @@ const ViewAll = () => {
   let handleFetch = ({ selected: selectedPage }) => {
     setCurrPage(selectedPage);
   };
-  const pageCount = Math.ceil(recipes.length / perpage);
+  //setting here filterData.length because we want to show the pages as per the data available
+  const pageCount = Math.ceil(filterData.length / perpage);
   const offset = currPage * perpage; //offset = 0, 10, 20......
 
-  let navtoRecipes = (item) =>{
-    Navigate(`${item.id}`)
-  }
+  let navtoRecipes = (item) => {
+    Navigate(`${item.id}`);
+  };
+  // -------------- Filter ---------------------
+  let handleFilter = (event) => {
+    let option = event.target.value;
+    let newData;
+    if (option == "coconut_sweetners") {
+      newData = recipes.filter((item) => {
+        return item.category == "Organic Coconut Sweetners";
+      });
+      setFilterData(newData);
+      console.log(newData);
+    } else if (option == "sauces") {
+      newData = recipes.filter((item) => {
+        return item.category == "Sauces & Marinades";
+      });
+      setFilterData(newData);
+      console.log(newData);
+    } else if (option == "") {
+      setFilterData(recipes);
+    } else {
+      alert(``);
+    }
+  };
+
   return (
     <>
       <Navbar />
@@ -46,8 +73,13 @@ const ViewAll = () => {
           <img src={explore_recipes} alt="" />
         </div>
         <h1 className="recipe_heading">All-Recipes</h1>
+        <select onChange={handleFilter}>
+          <option value="">Default</option>
+          <option value="coconut_sweetners">Organic Coconut Sweetners</option>
+          <option value="sauces">Sacues & Marinades</option>
+        </select>
         <div className="all_recipes">
-          {recipes.slice(offset, offset + perpage).map((item, index) => {
+          {filterData.slice(offset, offset + perpage).map((item, index) => {
             return (
               <div key={index} onClick={() => navtoRecipes(item)}>
                 {/* <div> */}
@@ -61,6 +93,7 @@ const ViewAll = () => {
             );
           })}
         </div>
+
         <ReactPaginate
           previousLabel={"<- Prev"}
           nextLabel={"Next ->"}
@@ -72,6 +105,7 @@ const ViewAll = () => {
           disabledClassName={"pagination_link_disabled"}
           activeClassName={"pagination_link_active"}
         />
+
         <Footer />
       </div>
     </>
