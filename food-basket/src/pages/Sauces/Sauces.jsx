@@ -54,8 +54,8 @@ const Sauces = () => {
     <>
       <Navbar />
       <ScrollToTop smooth />
-      <div className="main_organic_div">
-        <div className="child_organic_div">
+      <div className="main_sauce_organic_div">
+        <div className="sauce_child_sauce_organic_div">
           <h1>ORGANIC SAUCES & MARINADES</h1>
           <p>
             Enjoy our Coco Amino Sauces and Marinades with all your favorite
@@ -66,7 +66,7 @@ const Sauces = () => {
             vegetable, noodle dish or stir fry.
           </p>
         </div>
-        <div className="organic_div">
+        <div className="sauce_organic_div">
           {data.map((item, index) => {
             return (
               <div key={index} className="child_div1">
@@ -76,7 +76,7 @@ const Sauces = () => {
                 {/* </div> */}
                 <Button
                   type="primary"
-                  className="details_btn"
+                  className="sauce_details_btn"
                   onClick={() => handleDetails(item)}
                 >
                   Details
@@ -85,7 +85,7 @@ const Sauces = () => {
             );
           })}
         </div>
-        <div className="unrefined_div">
+        <div className="child_unrefined_div">
           {/* <div className="brewed_div"> */}
           <h1>Brewed in Small Batches...</h1>
           {/* <h4>
@@ -94,7 +94,7 @@ const Sauces = () => {
               organic farmers in Indonesia.
             </h4> */}
           {/* </div> */}
-          <div className="unrefined_img_div">
+          <div className="sauce_unrefined_img_div">
             <div>
               <img
                 src="data:image/png;base64,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"
@@ -118,9 +118,9 @@ const Sauces = () => {
             </div>
           </div>
         </div>
-        <div className="something_declicious">
+        <div className="sauce_something_declicious">
           <h1>Make Something Delicious with Our Coco Aminos...</h1>
-          <div className="make_something">
+          <div className="sauce_make_something">
             {makesomething.map((item, index) => {
               return (
                 <div key={index}>

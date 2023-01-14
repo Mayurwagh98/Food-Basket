@@ -3,7 +3,7 @@
 
 }
 
-.child_organic_div {
+.sauce_child_sauce_organic_div {
     padding: 100px 0 0 0;
     /* border: 1px solid red; */
     box-sizing: border-box;
@@ -15,7 +15,7 @@
     background: linear-gradient(90deg, rgba(32, 29, 94, 1) 0%, rgba(74, 143, 51, 1) 100%, rgba(76, 168, 45, 1) 100%, rgba(21, 123, 144, 1) 100%);
 }
 
-.child_organic_div h1 {
+.sauce_child_sauce_organic_div h1 {
     font-size: 40px;
     font-family: MV Boli;
     animation-duration: 2s;
@@ -34,7 +34,7 @@
     }
 }
 
-.child_organic_div p {
+.sauce_child_sauce_organic_div p {
     width: 50%;
     text-align: center;
     margin: auto;
@@ -43,7 +43,6 @@
     animation-duration: 3s;
     animation-name: slidein2;
 }
-
 @keyframes slidein2 {
     from {
         margin-right: -1000px;
@@ -57,17 +56,16 @@
 }
 
 
-.organic_div {
+.sauce_organic_div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* gap: 10px; */
     margin: 10px auto 30px auto;
     /* border: 1px solid red; */
     width: 80%;
-
 }
 
-.organic_div div {
+.sauce_organic_div div {
     text-align: center;
     /* border: 1px solid red; */
     margin: 40px auto auto auto;
@@ -77,7 +75,7 @@
     background-color: #ECECEC;
 }
 
-.child_div1 h1 {
+.sauce_organic_div h1 {
     width: 80%;
     margin: auto auto 30px auto;
     /* border: 1px solid red; */
@@ -86,41 +84,40 @@
 
 }
 
-.organic_div img {
+.sauce_organic_div img {
     width: 70%;
     height: 300px;
     margin: 40px 20px 20px 20px;
     border-radius: 30px;
 }
 
-.details_btn {
+.sauce_details_btn {
     margin: 0px 20px 30px 20px;
     width: 35%;
     height: 40px;
     font-size: 18px;
 }
 
-.unrefined_div {
-    /* border: 1px solid red; */
-    display: flex;
-    height: 400px;
-    /* background-color: #dfb475; */
-    background: rgb(32, 29, 94);
-    background: linear-gradient(90deg, rgba(32, 29, 94, 1) 0%, rgba(63, 157, 73, 1) 0%, rgba(143, 96, 51, 1) 100%, rgba(21, 123, 144, 1) 100%);
-    margin: 60px 0 0 0;
+.child_unrefined_div {
+ /* border: 1px solid red; */
+ display: flex;
+ height: 400px;
+ /* background-color: #dfb475; */
+ background: rgb(32, 29, 94);
+ background: linear-gradient(90deg, rgba(32, 29, 94, 1) 0%, rgba(63, 157, 73, 1) 0%, rgba(143, 96, 51, 1) 100%, rgba(21, 123, 144, 1) 100%);
+ margin: 60px 0 0 0;
 }
 
-.unrefined_div h1 {
+.child_unrefined_div h1 {
     width: 40%;
     margin: auto auto auto 40px;
     padding: 0 0 20px 0;
     font-family: Goudy Old Style;
     font-size: 50px;
     color: #131d3f;
-
 }
 
-.unrefined_img_div {
+.sauce_unrefined_img_div {
     width: 60%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -129,7 +126,7 @@
     text-align: center;
 }
 
-.unrefined_img_div h3 {
+.sauce_unrefined_img_div h3 {
     font-family: Perpetua;
     color: #282A3A;
     width: 60%;
@@ -137,28 +134,26 @@
     font-size: 25px;
 }
 
-.unrefined_img_div div {
-    /* border: 1px solid black; */
-    height: 80%;
-    margin: auto;
-
+.sauce_unrefined_img_div div {
+   /* border: 1px solid black; */
+   height: 80%;
+   margin: auto;
 }
 
-.unrefined_img_div>div>img {
+.sauce_unrefined_img_div>div>img {
     height: 200px;
     margin: 20px;
     border-radius: 50%;
 }
 
-.something_declicious {
+.sauce_something_declicious {
     /* border: 2px solid yellow; */
     height: 650px;
     margin: 60px auto 50px auto;
     background-color: #7e569b;
-    
 }
 
-.something_declicious>h1 {
+.sauce_something_declicious>h1 {
     width: 50%;
     margin: 40px auto 30px auto;
     padding: 40px 0 0 0;
@@ -168,7 +163,7 @@
     font-size: 35px;
 }
 
-.make_something {
+.sauce_make_something {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     /* gap: 10px; */
@@ -178,7 +173,7 @@
 
 }
 
-.make_something div {
+.sauce_make_something div {
     width: 90%;
     height: 100%;
     text-align: center;
@@ -193,14 +188,14 @@
 
 }
 
-.make_something img {
+.sauce_make_something img {
     width: 100%;
     height: 270px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.something_declicious>.view_all {
+.sauce_something_declicious>.view_all {
     left: 45%;
     top: 30px;
     height: 40px;
