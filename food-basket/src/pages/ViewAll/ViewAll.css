@@ -13,7 +13,8 @@
     height: 470px;
     width: 100%;
 }
-.recipe_heading{
+
+.recipe_heading {
     text-align: center;
     font-family: Lucida Handwriting;
     font-weight: bold;
@@ -27,25 +28,29 @@
     grid-template-columns: repeat(3, 1fr);
     /* border: 2px solid blue; */
     width: 80%;
-    
+
     margin: auto;
 }
-.all_recipes h2{
+
+.all_recipes h2 {
     width: 80%;
     margin: 3px auto 16px auto;
     font-family: Century Gothic;
     color: #144272;
 }
-.all_recipes p{
+
+.all_recipes p {
     width: 80%;
     font-family: Geneva;
     margin: -10px auto;
     color: #820000;
 }
-.all_recipes h4{
+
+.all_recipes h4 {
     margin: 0px auto 15px auto;
     color: #E14D2A;
 }
+
 .all_recipes div {
     /* border: 1px solid red; */
     width: 90%;
@@ -112,9 +117,19 @@
 
 }
 
-@media screen and (max-width: 720px) {
-    .pagination__link {
-        width: 45px;
-        height: 12px;
-    }
+.filter_div {
+    display: flex;
+    /* border: 1px solid red; */
+    width: 40%;
+    margin: auto;
+}
+
+.filter_div h1 {
+    margin: auto 10px 0 10px;
+    font-family: Comic Sans MS;
+    color: #820000;
+}
+
+.filter_options {
+    height: 100%;
 }

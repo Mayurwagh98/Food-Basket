@@ -6,6 +6,7 @@ import "./ViewAll.css";
 import ReactPaginate from "react-paginate";
 import { Footer } from "../../components/Footer/Footer";
 import { Navigate, useNavigate } from "react-router-dom";
+import ScrollToTop from "react-scroll-to-top";
 
 const ViewAll = () => {
   let [recipes, setRecieps] = useState([]);
@@ -60,24 +61,30 @@ const ViewAll = () => {
       console.log(newData);
     } else if (option == "") {
       setFilterData(recipes);
-    } else {
-      alert(``);
     }
   };
 
   return (
     <>
       <Navbar />
+      <ScrollToTop smooth/>
       <div className="main_recipes_div">
         <div className="recipes_img">
           <img src={explore_recipes} alt="" />
         </div>
         <h1 className="recipe_heading">All-Recipes</h1>
-        <select onChange={handleFilter}>
-          <option value="">Default</option>
-          <option value="coconut_sweetners">Organic Coconut Sweetners</option>
-          <option value="sauces">Sacues & Marinades</option>
-        </select>
+        <div className="filter_div">
+          <h1>Filter Recipes</h1>
+          <div>
+            <select onChange={handleFilter} className="filter_options">
+              <option value="">Default</option>
+              <option value="coconut_sweetners">
+                Organic Coconut Sweetners
+              </option>
+              <option value="sauces">Sacues & Marinades</option>
+            </select>
+          </div>
+        </div>
         <div className="all_recipes">
           {filterData.slice(offset, offset + perpage).map((item, index) => {
             return (
