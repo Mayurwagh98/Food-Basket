@@ -26,7 +26,7 @@ const Sauces = () => {
 
   let getSomething = () => {
     axios
-      .get("http://localhost:8080/makeSomething")
+      .get("http://localhost:8080/sauces_make_something")
       .then((res) => {
         console.log(res.data);
         setMakeSomething(res.data);
@@ -45,10 +45,10 @@ const Sauces = () => {
   let handleViewAll = () => {
     navigate("/viewAll");
   };
-  // let handleDetails = (item) => {
-  //   navigate(`${item.id}/organic_details`);
-  //   // console.log(item)
-  // };
+  let handleDetails = (item) => {
+    navigate(`${item.id}/sauces_details`);
+    // console.log(item)
+  };
 
   return (
     <>
@@ -86,14 +86,14 @@ const Sauces = () => {
           })}
         </div>
         <div className="unrefined_div">
-          <div className="brewed_div">
-            <h1>Brewed in Small Batches...</h1>
-            <h4>
+          {/* <div className="brewed_div"> */}
+          <h1>Brewed in Small Batches...</h1>
+          {/* <h4>
               We brew this savory sauce in small batches from Nira, the nectar
               of the coconut blossom harvested by hand by our collective of
               organic farmers in Indonesia.
-            </h4>
-          </div>
+            </h4> */}
+          {/* </div> */}
           <div className="unrefined_img_div">
             <div>
               <img
@@ -119,7 +119,7 @@ const Sauces = () => {
           </div>
         </div>
         <div className="something_declicious">
-          <h1>Make Something Delicious with Our Coconut Sugar</h1>
+          <h1>Make Something Delicious with Our Coco Aminos...</h1>
           <div className="make_something">
             {makesomething.map((item, index) => {
               return (

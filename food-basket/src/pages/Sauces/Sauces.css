@@ -9,8 +9,10 @@
     box-sizing: border-box;
     text-align: center;
     height: 450px;
-    background-color: #b32e2e;
+    /* background-color: #b32e2e; */
     color: white;
+    background: rgb(32, 29, 94);
+    background: linear-gradient(90deg, rgba(32, 29, 94, 1) 0%, rgba(74, 143, 51, 1) 100%, rgba(76, 168, 45, 1) 100%, rgba(21, 123, 144, 1) 100%);
 }
 
 .child_organic_div h1 {
@@ -102,16 +104,20 @@
     /* border: 1px solid red; */
     display: flex;
     height: 400px;
-    background-color: #FFDCA9;
+    /* background-color: #dfb475; */
+    background: rgb(32, 29, 94);
+    background: linear-gradient(90deg, rgba(32, 29, 94, 1) 0%, rgba(63, 157, 73, 1) 0%, rgba(143, 96, 51, 1) 100%, rgba(21, 123, 144, 1) 100%);
+    margin: 60px 0 0 0;
 }
 
 .unrefined_div h1 {
     width: 40%;
-    margin: auto auto auto 30px;
+    margin: auto auto auto 40px;
     padding: 0 0 20px 0;
     font-family: Goudy Old Style;
-    font-size: 35px;
-    color: #181D31;
+    font-size: 50px;
+    color: #131d3f;
+
 }
 
 .unrefined_img_div {
@@ -135,7 +141,7 @@
     /* border: 1px solid black; */
     height: 80%;
     margin: auto;
-    
+
 }
 
 .unrefined_img_div>div>img {
@@ -148,7 +154,8 @@
     /* border: 2px solid yellow; */
     height: 650px;
     margin: 60px auto 50px auto;
-    background-color: #68B984;
+    background-color: #7e569b;
+    
 }
 
 .something_declicious>h1 {
@@ -181,7 +188,8 @@
     background-color: #FEFCF3;
     border-radius: 20px;
     padding: 0 0 10px 0;
-    color: #2D033B;
+    color: #1A120B;
+    font-weight: bolder;
 
 }
 
