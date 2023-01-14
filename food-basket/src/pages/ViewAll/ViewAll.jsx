@@ -4,12 +4,13 @@ import { Navbar } from "../../components/Navbar/Navbar";
 import explore_recipes from "../../images/explore_recipes.png";
 import "./ViewAll.css";
 import ReactPaginate from "react-paginate";
-import {Footer} from "../../components/Footer/Footer"
+import { Footer } from "../../components/Footer/Footer";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const ViewAll = () => {
   let [recipes, setRecieps] = useState([]);
   const [currPage, setCurrPage] = useState(0);
-
+  let Navigate = useNavigate()
   let getRecipes = () => {
     axios
       .get("http://localhost:8080/recipes")
@@ -23,7 +24,7 @@ const ViewAll = () => {
 
   useEffect(() => {
     getRecipes();
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   }, []);
 
   // ------------------- Pagination -------------------
@@ -34,6 +35,9 @@ const ViewAll = () => {
   const pageCount = Math.ceil(recipes.length / perpage);
   const offset = currPage * perpage; //offset = 0, 10, 20......
 
+  let navtoRecipes = (item) =>{
+    Navigate(`${item.id}`)
+  }
   return (
     <>
       <Navbar />
@@ -45,7 +49,7 @@ const ViewAll = () => {
         <div className="all_recipes">
           {recipes.slice(offset, offset + perpage).map((item, index) => {
             return (
-              <div key={index}>
+              <div key={index} onClick={() => navtoRecipes(item)}>
                 {/* <div> */}
                 <img src={item.image} alt="" />
                 <h2>{item.title}</h2>
