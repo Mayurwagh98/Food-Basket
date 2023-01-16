@@ -8,6 +8,10 @@ import { ViewAll } from "../pages/ViewAll/ViewAll";
 import { OrganicDetails } from "../pages/OrganicDetails/OrganicDetails";
 import { Recipes } from "../pages/Recipes/Recipes";
 import { Sauces } from "../pages/Sauces/Sauces";
+import { Sauces_details } from "../pages/SaucesDetails/Sauces_details";
+// import {Login} from "../pages/Login/Login"
+// import {Signup} from "../pages/Signup/Signup"
+import { ShopAll } from "../pages/ShopAll/ShopAll";
 
 const MainRoute = () => {
   return (
@@ -27,6 +31,14 @@ const MainRoute = () => {
         />
         <Route path="/viewAll/:id" element={<Recipes />} />
         <Route path="/sauces" element={<Sauces />} />
+        <Route path="/sauces/:id/sauces_details" element={<Sauces_details />} />
+        <Route path="/saucesAll" element={<ViewAll />}/>
+        {/* <Route path="/login" element={<Login />}/> */}
+        {/* <Route path="/signup" element={<Signup />}/> */}
+        <Route path="/ShopAll" element={<ShopAll />}/>
+
+        
+
       </Routes>
     </div>
   );
