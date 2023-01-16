@@ -1,0 +1,13 @@
+.main_shop_div{
+    padding: 50px 0 0 0;
+}
+.child_shop_div{
+    /* border: 1px solid red; */
+    /* height: 300px; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.child_shop_div img{
+    width: 100%;
+}
