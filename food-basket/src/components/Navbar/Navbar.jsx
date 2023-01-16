@@ -1,6 +1,6 @@
 import React from "react";
 import { Organics } from "../Organics";
-import { ShopAll } from "../Shopall";
+import { Shopall } from "../Shopall";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
@@ -17,7 +17,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="navbar">
-        {/* <ShopAll /> */}
+        <Shopall />
         <Organics />
         <Link to="/about" style={{ textDecoration: "none", color: "white" }}>
           About Us
