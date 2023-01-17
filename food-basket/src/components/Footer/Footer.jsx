@@ -9,6 +9,7 @@ import {
 import Food_basket from "../../images/Food_basket.png";
 import { UserOutlined } from "@ant-design/icons";
 import { Input, Button } from "antd";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   let year = new Date().getFullYear();
@@ -28,7 +29,9 @@ const Footer = () => {
         </div>
         <div>
           <h1>Shop</h1>
-          <h4>All Products</h4>
+          <Link to="/allProducts">
+            <h4>All Products</h4>
+          </Link>
           <h4>Snacks</h4>
           <h4>Supplements</h4>
           <h4>Coconut Sugars</h4>
@@ -42,7 +45,9 @@ const Footer = () => {
         </div>
         <div>
           <h1>About Us</h1>
-          <h4>Nutrition Philosophy</h4>
+          <Link to="/about">
+            <h4>Nutrition Philosophy</h4>
+          </Link>
           <h4>Impacts</h4>
         </div>
         <div>
@@ -63,7 +68,9 @@ const Footer = () => {
             Text Message
           </label>
           <br />
-          <Button type="primary" className="subs_btn">Subscribe</Button>
+          <Button type="primary" className="subs_btn">
+            Subscribe
+          </Button>
         </div>
       </div>
       <div className="copyright">
