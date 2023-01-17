@@ -1,3 +1,6 @@
+*{
+    text-decoration: none;
+}
 .main_footer {
     /* border: 1px solid red; */
     display: grid;
@@ -14,7 +17,9 @@
 .main_footer h4 {
     font-family: Century Gothic;
     cursor: pointer;
-
+    text-decoration: none;
+    color: black;
+    
 }
 
 .main_footer>div {
