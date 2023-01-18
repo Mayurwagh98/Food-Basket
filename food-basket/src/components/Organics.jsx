@@ -1,29 +1,20 @@
 import React from "react";
-import { DownOutlined, SmileOutlined } from "@ant-design/icons";
+// import { DownOutlined } from "@ant-design/icons";
 import { Dropdown, Space } from "antd";
+import { Link } from "react-router-dom";
 const items = [
   {
     key: "1",
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.antgroup.com"
-      >
-        Organic Brown Coconut Sugar
-      </a>
-    ),
+    label: <Link to="/allProducts">All Products</Link>,
   },
   {
     key: "2",
+    label: <Link to="/organic_coconut_sweetners">Organic Brown Coconut Sugar</Link>,
+  },
+  {
+    key: "3",
     label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.antgroup.com"
-      >
-        Organice Gold Coconut Sugar
-      </a>
+      <Link to="/sauces">Sauces & Marinades</Link>
     ),
   },
 ];
@@ -36,7 +27,7 @@ const Organics = () => (
     <a onClick={(e) => e.preventDefault()}>
       <Space style={{ margin: "30px" }}>
         Organic Products
-        <DownOutlined />
+        {/* <DownOutlined /> */}
       </Space>
     </a>
   </Dropdown>
