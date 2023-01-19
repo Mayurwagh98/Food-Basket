@@ -1,13 +1,25 @@
 .main_shop_div{
     padding: 50px 0 0 0;
+    /* display: flex; */
+    border: 2px solid blue;
 }
 .child_shop_div{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     /* height: 300px; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    width: 100%;
+    /* margin: auto; */
+    padding: 0px 0 0 260px;
+    text-align: center;
 }
 .child_shop_div img{
     width: 100%;
+}
+.filter_shop_div{
+    border:1px solid red;
+    /* height: 300px; */
+    width: 300px;
+    position: fixed;
 }
