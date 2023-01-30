@@ -19,6 +19,7 @@ const Allproducts = () => {
   let getProducts = () => {
     axios
       .get("http://localhost:8080/allProducts")
+      // .get("https://handsome-dog-overalls.cyclic.app")
       .then((res) => {
         // products = res.data;
         setProducts(res.data);
