@@ -1,46 +1,26 @@
 import React from "react";
 import { DownOutlined, SmileOutlined } from "@ant-design/icons";
 import { Dropdown, Space } from "antd";
+import { Link } from "react-router-dom";
+
 const items = [
   {
     key: "1",
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.antgroup.com"
-      >
-        New Arrivals
-      </a>
-    ),
-   
-  },
-  {
-    key: "2",
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.antgroup.com"
-      >
-        Best Sellers
-      </a>
-    ),
-   
+    label: <Link to="/ShopAll">Shop All</Link>,
   },
 ];
-const ShopAll = () => (
+const Shopall = () => (
   <Dropdown
     menu={{
       items,
     }}
   >
     <a onClick={(e) => e.preventDefault()}>
-      <Space style={{ margin: "30px"}}>
+      <Space style={{ margin: "0px" }}>
         Shope All
-        <DownOutlined />
+        {/* <DownOutlined /> */}
       </Space>
     </a>
   </Dropdown>
 );
-export { ShopAll };
+export { Shopall };
