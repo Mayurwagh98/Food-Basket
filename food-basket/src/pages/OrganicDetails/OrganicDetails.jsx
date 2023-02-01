@@ -14,6 +14,7 @@ const OrganicDetails = () => {
   let getItem = () => {
     axios
       .get(`http://localhost:8080/organic_sweetners/${id}`)
+      // .get(`https://handsome-dog-overalls.cyclic.app/organic_sweetners/${id}`)
       .then((res) => {
         setData(res.data);
         console.log(res.data);
