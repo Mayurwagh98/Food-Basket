@@ -177,3 +177,307 @@
     font-size: 20px;
 }
 
+@media screen and (max-width:834px) {
+    .rooted_div {
+        height: 500px;
+        /* margin-top: 60px; */
+        /* border: 1px solid red */
+    }
+    
+    .rooted_div img {
+        height: 100%;
+        width: 100%
+    }
+    
+    .featured_products_heading {
+        margin-top: -20px;
+        padding-bottom: 30px;
+        text-align: center;
+        background-color: whitesmoke;
+    }
+    
+    .featured_products_heading h3 {
+        padding-top: 20px;
+        font-family: Rockwell;
+        color: #434242;
+    }
+    
+    .featured_products_heading h1 {
+        font-family: Rockwell;
+        color: #2B3A55;
+    
+    }
+    
+    .philosophy_div {
+        /* border: 1px solid red; */
+        display: flex;
+        height: 250px;
+        margin: 0px 0 20px 0;
+        background-color: rgb(54, 138, 54);
+    
+    }
+    
+    .philosophy_div .philosophy_heading {
+        /* border: 1px solid blue; */
+        padding: 30px 0 10px 0;
+        margin: 10px 0 0 20px;
+        width: 75%;
+        font-size: 30px;
+        text-align: center;
+        font-family: 'Moon Dance';
+    }
+    
+    .philosophy_content {
+        /* border: 1px solid blue; */
+        padding: 30px;
+        font-size: 30px;
+        text-align: center;
+        font-family: 'Moon Dance';
+        margin: 0 0 0 20px;
+    
+    }
+    
+    .goodness_heading {
+        text-align: center;
+        font-size: 40px;
+        font-family: cursive;
+        padding: 30px 0 0 0;
+    
+    }
+    
+    .rooted_all {
+        background-color: #F5EDCE;
+        margin-top: -30px;
+        /* border: 1px solid red; */
+        height: 970px;
+    }
+
+    .rooted_info h2 {
+        font-size: 40px;
+        font-family: cursive;
+        padding: 10px 0 0 0;
+    }
+    
+    .rooted_info p {
+        text-align: center;
+        width: 60%;
+        padding: 10px 0 50px 0;
+        margin: auto;
+        font-size: 25px;
+        font-family: cursive;
+    }
+    
+    .rooted_img_div {
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .rooted_img_div div {
+        /* border: 2px solid yellow; */
+        width: 90%;
+        margin: auto;
+        height: 100%;
+        text-align: center;
+        font-family: Comic Sans MS;
+    }
+    
+    .rooted_img_div img {
+        border-radius: 50%;
+        width: 70%;
+        height: 50%;
+        margin-top: 20px;
+    }
+    
+    .rooted_img_div p {
+        font-size: 20px;
+    }
+    
+    .transformation_div {
+        /* border: 1px solid red; */
+        width: 95%;
+        margin: auto;
+        border-bottom: 2px solid gray;
+        padding: 0 0 20px 0;
+    }
+    
+    .transformation_div h1 {
+        text-align: center;
+        font-family: Lucida Handwriting;
+        margin-top: 45px;
+    }
+    
+    .transformation_img {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* border: 1px solid blue; */
+        width: 70%;
+        margin: auto;
+    }
+    
+    .transformation_img div {
+        /* border: 1px solid yellow; */
+        text-align: center;
+        width: 100%;
+    }
+    
+    .transformation_img img {
+        width: 40%;
+        height: 50px;
+    }
+    
+    .transformation_img p {
+        font-family: MV Boli;
+        font-size: 20px;
+    }
+    
+    .healhty_qoute {
+        /* border: 1px solid red; */
+        width: 65%;
+        margin: auto;
+        text-align: center;
+        /* background-color: #DAE2B6; */
+        
+    }
+    
+}
+
+@media screen and (max-width:428px) {
+    .rooted_div {
+        height: 400px;
+        margin-top: 20px;
+        /* border: 1px solid red */
+    }
+    
+    .rooted_div img {
+        height: 100%;
+        width: 100%
+    }
+    .philosophy_div {
+        /* border: 1px solid red; */
+        display: flex;
+        height: 270px;
+        margin: 0px 0 20px 0;
+        background-color: rgb(54, 138, 54);
+    
+    }
+    
+    .philosophy_div .philosophy_heading {
+        /* border: 1px solid blue; */
+        padding: 30px 0 10px 0;
+        margin: 10px 0 0 20px;
+        width: 75%;
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Moon Dance';
+    }
+    
+    .philosophy_content {
+        /* border: 1px solid blue; */
+        padding: 30px;
+        font-size: 23px;
+        text-align: center;
+        font-family: 'Moon Dance';
+        margin: 0 0 0 20px;
+    
+    }
+    
+    .goodness_heading {
+        text-align: center;
+        font-size: 35px;
+        font-family: cursive;
+        padding: 30px 0 0 0;
+    
+    }
+    
+    .rooted_all {
+        background-color: #F5EDCE;
+        margin-top: -30px;
+        /* border: 1px solid red; */
+        height: 1730px;
+    }
+
+    .rooted_info p {
+        text-align: center;
+        width: 60%;
+        padding: 10px 0 50px 0;
+        margin: auto;
+        font-size: 18px;
+        font-family: cursive;
+    }
+    
+    .rooted_img_div {
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .rooted_img_div div {
+        /* border: 2px solid yellow; */
+        width: 90%;
+        margin: auto;
+        height: 100%;
+        text-align: center;
+        font-family: Comic Sans MS;
+    }
+    
+    .rooted_img_div img {
+        border-radius: 50%;
+        width: 70%;
+        height: 50%;
+        margin-top: 20px;
+    }
+    
+    .rooted_img_div p {
+        font-size: 20px;
+    }
+    
+    .transformation_div {
+        /* border: 1px solid red; */
+        width: 95%;
+        margin: auto;
+        border-bottom: 2px solid gray;
+        padding: 0 0 20px 0;
+    }
+    
+    .transformation_div h1 {
+        text-align: center;
+        font-family: Lucida Handwriting;
+        margin-top: 45px;
+        font-size: 23px;
+    }
+    
+    .transformation_img {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* border: 1px solid blue; */
+        width: 90%;
+        margin: auto;
+    }
+    
+    .transformation_img div {
+        /* border: 1px solid yellow; */
+        text-align: center;
+        width: 100%;
+    }
+    
+    .transformation_img img {
+        width: 40%;
+        height: 50px;
+    }
+    
+    .transformation_img p {
+        font-family: MV Boli;
+        font-size: 18px;
+    }
+    
+    .healhty_qoute {
+        /* border: 1px solid red; */
+        width: 95%;
+        margin: auto;
+        text-align: center;
+        /* background-color: #DAE2B6; */
+        
+    }
+    
+}
