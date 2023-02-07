@@ -9,13 +9,17 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    width: 100%;
-    /* margin: auto; */
+    width: 94%;
+    margin: auto;
     padding: 0px 0 0 260px;
     text-align: center;
+    
 }
 .child_shop_div img{
-    width: 100%;
+    width: 90%;
+    height: 270px;
+    margin: 10px;
+
 }
 .filter_shop_div{
     /* border:1px solid red; */
@@ -26,8 +30,24 @@
 }
 .filter_shop_div > label{
     font-size: 22px;
-    margin: 15px;
+    margin: 15px 0 10px 35px;
 }
 .filter_shop_div > h2{
-    margin: 10px;
+    margin: 10px 0 10px 30px;
+    font-family: Calisto MT;
+}
+.title{
+    font-size: 22px;
+}
+.shop_all_products_div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+.shop_all_products_div > h2{
+    margin: 0px;
+    font-family: Book Antiqua;
+}
+.shop_all_products_div > h2:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
